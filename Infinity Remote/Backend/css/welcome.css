@@ -1,0 +1,50 @@
+body {
+  background-color: var(--bg-color);
+  font-family: Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+div {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+img {
+  width: 25vw;
+  height: 25vw;
+}
+
+.header{
+  top: 5%;
+  visibility: hidden;
+}
+.center{
+  top: 35%;
+}
+.footer{
+  bottom: 0;
+}
+p{
+  color: var(--text-color);
+}
+form {
+  display: none;
+}
+
+:root {
+  --bg-color: rgba(245, 245, 245, 0.74);
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: #263238;
+  --text-color: white;
+}
+
+@media only screen and (min-width: 768px){
+  .header{
+    visibility: visible;
+  }
+}

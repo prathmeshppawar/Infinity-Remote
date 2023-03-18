@@ -1,0 +1,44 @@
+body {
+  background-color: var(--bg-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5em;
+  padding-right: 5em;
+  color: var(--text-color);
+}
+
+.heading {
+  padding-top: 1em;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+p {
+  font-size: larger;
+}
+
+img {
+  display: block;
+  margin: auto;
+  padding-top: 2em;
+}
+
+button {
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-size: medium;
+  cursor: pointer;
+}
+
+:root {
+  --bg-color: #00bfff;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: #03254c;
+  --text-color: white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/loading.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/svg" href="/icons/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon512.svg" />
+    <link rel="apple-mobile-web-app-status-bar" content="#4dbaa8" />
+    <title>Connecting...</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/darkMode.js"></script>
+    <script>
+      const roomId = "<%= roomId %>";
+      </script>
+    <script src="/scripts/loading.js"></script>
+  </head>
+  <body>
+    <div class="loading">
+      <h2>Connecting...</h2>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <form action="/Remote" id="remote" method="POST">
+      <input name="room" id="room" type="text" required />
+    </form>
+    <form
+      action="/Remote-Already-Connected"
+      id="secondConnection"
+      method="GET"
+    ></form>
+    <form action="/Invalid-QR" id="invalidQR" method="GET"></form>
+  </body>
+</html>

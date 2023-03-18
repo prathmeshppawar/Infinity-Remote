@@ -1,0 +1,26 @@
+{
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_end",
+      "js": ["content.js"]
+    }
+  ],
+  "name": "Infinity Remote",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Connect to Youtube on your desktop remotely from your mobile's browser",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["socket.io.js","background.js"]
+  },
+  "permissions": ["tabs", "activeTab","storage"]
+}

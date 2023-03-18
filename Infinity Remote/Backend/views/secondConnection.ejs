@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/icons/error.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon512.svg" />
+    <link rel="apple-mobile-web-app-status-bar" content="#4dbaa8" />
+    <link rel="stylesheet" href="/css/errors.css" />
+    <title>Remote Already Connected</title>
+  </head>
+  <body>
+    <div>
+      <img src="/icons/error.png" alt="Error Image" width="100vh" />
+      <h1 class="heading">Remote Already Connected</h1>
+    </div>
+    <div>
+      <p>Looks like one remote is already connected with your browser.</p>
+      <p>You may try the following:</p>
+      <ul>
+        <li>
+          Disconnect the remote which is connected to the browser and then try
+          again.
+        </li>
+        <li>Restart your browser and then try again.</li>
+        <li>Restart the extension and then try again.</li>
+      </ul>
+    </div>
+    <div>
+      <form action="/QR-Scanner" method="GET">
+        <button type="submit">Try Again</button>
+      </form>
+    </div>
+    <script src="/scripts/darkMode.js"></script>
+  </body>
+</html>

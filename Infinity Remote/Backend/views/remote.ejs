@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/svg" href="/icons/icon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon512.svg" />
+    <link rel="apple-mobile-web-app-status-bar" content="#4dbaa8" />
+    <link rel="stylesheet" href="/css/remote.css" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <title>Infinity Remote</title>
+    <script>
+      const roomId = "<%= roomId %>";
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      Infinity Remote
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <i class="enabled fas fa-arrow-left fa-2x" id="back"></i>
+      <input
+        type="text"
+        class="searchBox"
+        id="searchBox"
+        placeholder="Search..."
+      />
+      <i class="enabled fas fa-search fa-2x" id="search"></i>
+    </div>
+
+    <button class="button-enabled up" id="up">
+      <i class="enabled fas fa-chevron-up fa-2x"></i>
+    </button>
+    <button class="button-enabled left" id="left">
+      <i class="enabled fas fa-chevron-left fa-2x" title="Left"></i>
+    </button>
+    <button class="button-enabled select" id="select">Select</button>
+    <button class="button-enabled right" id="right">
+      <i class="enabled fas fa-chevron-right fa-2x" title="Right"></i>
+    </button>
+    <button class="button-enabled down" id="down">
+      <i class="enabled fas fa-chevron-down fa-2x"></i>
+    </button>
+    <button class="button-enabled step-forward" id="stepForward">
+      <i class="enabled fas fa-step-forward fa-2x"></i>
+    </button>
+    <button class="button-enabled mute" id="mute">
+      <i class="enabled fas fa-volume-mute fa-2x"></i>
+    </button>
+    <button class="button-enabled step-backward" id="stepBackward">
+      <i class="enabled fas fa-step-backward fa-2x"></i>
+    </button>
+    <button class="button-enabled home" id="home">
+      <i class="enabled fas fa-home fa-2x"></i>
+    </button>
+    <button class="button-enabled expand" id="expand">
+      <i class="enabled fas fa-expand fa-2x"></i>
+    </button>
+    <button class="button-enabled caption" id="caption">
+      <i class="enabled fas fa-closed-captioning fa-2x"></i>
+    </button>
+    <div id="container">
+      <div class="range-slider">
+        <span id="rs-bullet" class="rs-label">x 1</span>
+        <input
+          id="rs-range-line"
+          class="rs-range"
+          type="range"
+          value="3"
+          min="0"
+          max="7"
+        />
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/remote.js"></script>
+  </body>
+</html>

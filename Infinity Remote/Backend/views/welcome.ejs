@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Control Youtube on your Desktop remotely from your mobile using this Progressive Web App integrated with a Chrome Extension">
+    <meta name="keywords" content="Infinity Remote, Infinity Remote Extension, Remote Youtube control, Youtube control">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" type="image/svg" href="/icons/icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon512.svg" />
+    <link rel="apple-mobile-web-app-status-bar" content="#4dbaa8" />
+    <link rel="stylesheet" href="/css/welcome.css" />
+    <title>Infinity Remote</title>
+  </head>
+  <body>
+    <div class="header">
+      <p>
+        This Web App is intended to be used with small sized screens.
+      </p>
+    </div>
+    <div class="center">
+      <img src="/icons/icon.svg" alt="Infinity Remote" />
+      <br>
+      <progress value="0" max="100"></progress>
+    </div>
+    <div class="footer">
+      <p>
+        Infinity Remote
+        <br />
+        <br />
+        This Web App is part of the
+        <br />
+        Chrome Extension - Infinity Remote
+      </p>
+    </div>
+    <div>
+      <form action="/QR-Scanner" method="GET">
+        <button type="submit"></button>
+      </form>
+    </div>
+    <script src="/scripts/welcome.js"></script>
+    <script src="/scripts/darkMode.js"></script>
+  </body>
+</html>

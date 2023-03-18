@@ -1,0 +1,22 @@
+{
+  "name": "infinity-remote",
+  "version": "1.0.0",
+  "description": "Connect to Youtube on your desktop remotely from your mobile's browser",
+  "main": "/server.js",
+  "scripts": {
+    "devStart": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshishRajIITI/Misc-6-Infinity-Remote.git"
+  },
+  "author": "Team Infinity Remote",
+  "license": "MIT",
+  "homepage": ".",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}

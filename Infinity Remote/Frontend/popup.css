@@ -1,0 +1,28 @@
+h2 {
+  padding-bottom: 5px;
+}
+a {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: #6e3b9c;
+}
+a:active {
+  color: red;
+}
+p {
+  font-size: medium;
+  display: inline;
+}
+button {
+  border-radius: 3px;
+  visibility: hidden;
+}
+canvas {
+  margin: 10px 0px 5px 0px;
+}
